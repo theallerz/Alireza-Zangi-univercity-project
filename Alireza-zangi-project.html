@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alireza Zangi</title>
+    <style>
+      body {
+      font-family: "Times New Roman", "Georgia", serif;        background-color: aliceblue;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.5;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+      }
+      nav li{
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      table {
+        width: 100%;
+        overflow: auto;
+        border: 1.5px solid #ccc;
+        text-align: center;
+        border-collapse: collapse;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      }
+
+      .gallery img {
+      width: calc(25% - 7.5px);
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      }
+      h6 {
+        text-align: center;
+      }
+
+      @media(max-width : 600px){
+        body{
+          padding: 10px;
+        }
+        
+        img{
+          width: 100%;
+          height: 10px;
+        }
+        table{
+          font-size: 15px;
+        }
+        nav{
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello I'm Alireza zangi</h1>
+      <p>Welcome to my personal website!</p>
+      <nav>
+        <li><a href="#">Main</a></li>
+        <li><a href="#aboutMe">About me</a></li>
+        <li><a href="#uniLife">University life</a></li>
+        <li><a href="#skills">Skills-table</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <h2 id="aboutMe">📝 About me</h2>
+      <p>
+        My name is Alireza ,
+        <br />
+        I'm a computer engineering student and currently learning HTML , CSS and
+        JavaScript.
+        <br />
+        I am also working on improving my English and exploring to stay up to
+        date in the tech world.
+      </p>
+      <h2 id="uniLife">🎓 University life</h2>
+      <p>
+        Recently , we finished learning the C++ programming language.
+        <br />After completing C++ cource , we started learning HTML (and
+        Assembly).
+        <br />
+        Right now , we're learning how to build simple web pages by using
+        different HTML tags and elements.
+        <br />
+        We've learned how to use basic HTML tags , these includes headings (h1
+        to h6), paragraphs, line-break , ...
+        <br />
+        We also practiced how to create simple tables using the table , tr and
+        td tags.
+        <br /><br />
+        Our teacher asked us to create a basic personal web page using the
+        elements we've learned.
+        <br />
+        In our project we are building pages using only HTML.
+      </p>
+      <h2 id="skills">💻 Skills-table</h2>
+      <p>Here are some of the skills I've been working on as a part of web development journey.
+        <br>
+        I'm continuously learning and practicing to improve and become more confident in using them.
+      </p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Skills</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+          <tbody>
+            <tr>
+          <td>HTML</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Learning</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Beginner</td>
+        </tr>
+          </tbody>
+      </table>
+      <h2 id="gallery">📷 Gallery</h2>
+      <p>Collection of random coding-related images,
+        <br>
+        added for visual interest and to create an inspiring atmosphere.
+      </p>
+      <section class="gallery">
+        <img src="./assets/image/image1.jpg"/>
+        <img src="./assets/image/image2.jpg"/>
+        <img src="./assets/image/image3.jpg"/>
+        <img src="./assets/image/image4.jpg"/>
+        <img src="./assets/image/image5.jpg"/>
+        <img src="./assets/image/image6.jpg"/>
+        <img src="./assets/image/image7.jpg"/>
+        <img src="./assets/image/image8.jpg"/>
+    </section>
+      <h2 id="contact">☎ Contact</h2>
+      <p>You can get in touch with me through the contact details below.</p>
+      <div>
+        <p>📞 Phone : 0900-000-0000</p>
+        <p>📧 Email : alireza@gmail.com</p>
+      </div>
+      <hr />
+    </main>
+    <footer>
+      <h6>Created by Alireza-Zangi</h6>
+    </footer>
+  </body>
+</html>
